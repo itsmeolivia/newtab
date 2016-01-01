@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "new tabs",
+  "description": "never think about where ur url will open again.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+  {
+    "all_frames": true,
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["jquery.js", "main.js"]
+  }
+  ]
+}
